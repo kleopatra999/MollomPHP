@@ -6,6 +6,14 @@ This file lists all major changes and additions to the PHP API for convenience. 
 
 ## Changes
 
+2013-11-25: Added support for expected languages that can be configured for each site.  
+
+* Provided a static variable that defines the list of ISO 639-1 language codes that Mollom can accept.
+* Expected languages can be passed to the Site API.
+* Mollom will treat an empty set of languages as updating the expected languages to none.
+* Mollom will skip updating expected languages if the expected languages are omitted.
+* Mollom will only use language detection with textual analysis if expected languages are configured.
+
 2013-11-09: Any `4xx` request error response code is now returned to application.
 
 * All client implementations need to account for all possible `4xx` errors now; primarily:
