@@ -995,8 +995,6 @@ abstract class Mollom {
    *   - privateKey: The private Mollom API key of the site.
    *   - url: The URL of the site.
    *   - email: The e-mail address of the primary contact of the site.
-   *   - languages: (optional) An array with a single value for the primary
-   *     language for site content.
    *   - platformName: (optional) The name of the platform running the site
    *     (e.g., "Drupal").
    *   - platformVersion: (optional) The version of the platform running the
