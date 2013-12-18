@@ -1004,7 +1004,7 @@ abstract class Mollom {
    *   - clientVersion: (optional) The version of the Mollom client plugin used
    *     (e.g., "6.15").
    *   - expectedLanguages: (optional) An array of language ISO codes, content
-   *     is expected to submitted in on the site.
+   *     is expected to be submitted in on the site.
    *   On failure, the error response code returned by the server.
    */
   public function getSite($publicKey = NULL) {
