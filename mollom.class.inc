@@ -1146,6 +1146,10 @@ abstract class Mollom {
    *   - contextTitle: The title of the parent/context content of the stored
    *     content; e.g., the title of the article or forum thread a comment is
    *     posted on (not the parent comment that was replied to).
+   *   - contextCreated: The creation date of the parent/context content of the
+   *     stored content as a unix timestamp in seconds; e.g., the creation date
+   *     of the article or forum thread a comment is posted on (not the parent
+   *     comment that was replied to).
    *
    * @return mixed
    *   On success, an associative array representing the full content record,
