@@ -970,7 +970,9 @@ abstract class Mollom {
     }
     if (isset($input)) {
       preg_match_all('@([^, =]+)="([^"]*)"@', $input, $header);
-      $header = array_combine($header[1], $header[2]);
+      if (!empty($header[1]) && !empty($header[2])) {
+        $header = array_combine($header[1], $header[2]);
+      }
     }
     return $header;
   }
