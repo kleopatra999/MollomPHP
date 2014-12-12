@@ -1315,6 +1315,10 @@ abstract class Mollom {
    *     - profanity: The content contains obscene, violent, profane language.
    *     - quality: The content is of low quality.
    *     - unwanted: The content is unwanted, taunting, off-topic.
+   *  - type (optional): A string denoting the type of feedback submitted.
+   *     - moderate: Feedback from the admin moderation process (default).
+   *     - flag: feedback from end users flagging content as inappropriate
+   *   - source (optional): A string denoting the user-interface source of the feedback.
    *   and at least one of:
    *   - contentId: A Mollom content ID associated with the content.
    *   - captchaId: A Mollom CAPTCHA ID associated with the content.
